@@ -45,5 +45,8 @@
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
     ]
-  }
+  },
+  "fdkExcludeFiles": [
+    ".report.json"
+  ]
 }
