@@ -1,15 +1,42 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
 const Home = () => {
 
-  const location = useLocation();
+  const makeSmiCall = async () => {
+    try {
+      const options = { hello: 'hello' };
+      const response = await window.client.request.invoke("invokeFromClient", options);
+      console.log('client - success', response);
+    } catch(error) {
+      console.log("client - error", error);
+    }
+  }
 
-  console.log('meta-app-location-1', location);
+  const openModal = () => {
+    window.client.interface
+		.trigger("showModal", {
+			title: "Sample Modal",
+			template: "interface/index.html",
+		})
+		.then(function (data) {
+			console.info("modal displayed");
+			console.info(data);
+		})
+		.catch(function (error) {
+			console.error("Unable to display modal");
+			console.error(error);
+		});
+
+  }
+
+  React.useEffect(() => {
+    makeSmiCall();
+  },[])
 
   return (
     <React.Fragment>
-      <div>Home Component</div>
+      <div>Home Component - 1</div>
+      <button onClick={() => openModal()}>Open interface</button>
     </React.Fragment>
   )
 }

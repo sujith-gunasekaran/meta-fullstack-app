@@ -1,6 +1,10 @@
 const axios = require('axios');
 
 exports = {
+  invokeFromClient: function(options) {
+    console.log('SMI - call', JSON.stringify(options));
+    renderData(null, "Success response returned from server");
+  },
   onTicketUpdateCallback: async function(payload) {
     axios.get('https://jsonplaceholder.typicode.com/posts')
     .then((response) => {

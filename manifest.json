@@ -12,6 +12,11 @@
         "onTicketUpdate": {
           "handler": "onTicketUpdateCallback"
         }
+      },
+      "functions": {
+        "invokeFromClient": {
+          "timeout": 15
+        }
       }
     }
   },
