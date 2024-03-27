@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest test --coverage"
   },
+  "metaConfig": {
+    "framework": "react"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

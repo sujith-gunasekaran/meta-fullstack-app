@@ -3,8 +3,12 @@
   "product": {
     "freshdesk": {
       "location": {
+        "full_page_app": {
+          "url": "fullPage.html",
+          "icon": "icon.svg"
+        },
         "ticket_sidebar": {
-          "url": "index.html",
+          "url": "ticketSidebar.html",
           "icon": "icon.svg"
         }
       },
