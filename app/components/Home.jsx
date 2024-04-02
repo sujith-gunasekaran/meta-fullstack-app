@@ -16,7 +16,7 @@ const Home = () => {
     window.client.interface
 		.trigger("showModal", {
 			title: "Sample Modal",
-			template: "interface/modal.html",
+			template: "modal.html",
 		})
 		.then(function (data) {
 			console.info("modal displayed");
@@ -32,7 +32,7 @@ const Home = () => {
     window.client.interface
 		.trigger("showDialog", {
 			title: "Sample Dialog",
-			template: "interface/dialog.html",
+			template: "dialog.html",
 		})
 		.then(function (data) {
 			console.info("dialog displayed");
