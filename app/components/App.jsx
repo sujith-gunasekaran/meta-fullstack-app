@@ -1,9 +1,9 @@
-import Form from './Form';
-import Home from './Home';
-import Counter from './Counter';
-import TailwindPage from './TailwindPage';
-import MaterialUiAccordian from './MaterialuiAccordian';
-import ClassComponent from './ClassComponent';
+import Form from 'app/components/Form.jsx';
+import Home from 'app/components/Home.jsx';
+import Counter from 'app/components/Counter.jsx';
+import TailwindPage from 'app/components/TailwindPage.jsx';
+import MaterialUiAccordian from 'app/components/MaterialuiAccordian.jsx';
+import ClassComponent from 'app/components/ClassComponent.jsx';
 import { format } from "date-fns";
 import {
   BrowserRouter, Routes, Route, Link

@@ -9,7 +9,7 @@
         },
         "ticket_sidebar": {
           "url": "ticketSidebar.html",
-          "icon": "icon.svg"
+          "icon": "icons/image-one.svg"
         }
       },
       "events": {

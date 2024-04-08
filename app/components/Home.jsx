@@ -51,6 +51,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <div>Home Component - 1</div>
+      <img src='icons/image-one.svg' alt="hello" />
       <button onClick={() => openModal()}>Open interface</button>
       <button onClick={() => openDialog()}>Open Dialog</button>
     </React.Fragment>
