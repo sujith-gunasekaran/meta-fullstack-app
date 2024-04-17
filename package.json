@@ -45,7 +45,9 @@
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
       "^.+\\.svg$": "jest-svg-transformer",
-      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+      "^app/(.*)$": "./app",
+      "^config/(.*)$": "./config"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"

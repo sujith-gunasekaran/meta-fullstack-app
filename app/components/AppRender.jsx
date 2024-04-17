@@ -1,9 +1,14 @@
-import { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import App from './App';
+import store from '../store';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
 import '../styles/style.css';
 
 
 const Main = () => {
+
+  console.log('main render');
 
   const [child, setChild] = useState(<h3>App is loading</h3>)
 
@@ -22,5 +27,13 @@ const Main = () => {
 
 }
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-export default Main;
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <Main />
+    </Provider>
+  </React.StrictMode>
+);

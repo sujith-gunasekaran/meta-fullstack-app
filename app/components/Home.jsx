@@ -1,4 +1,5 @@
 import React from 'react';
+import svgImage from 'app/public/icons/image-one.svg';
 
 const Home = () => {
 
@@ -51,7 +52,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <div>Home Component - 1</div>
-      <img src='icons/image-one.svg' alt="hello" />
+      <img src={svgImage} alt="hello-1" />
       <button onClick={() => openModal()}>Open interface</button>
       <button onClick={() => openDialog()}>Open Dialog</button>
     </React.Fragment>
