@@ -51,6 +51,10 @@
     },
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "app/**/*.jsx",
+      "app/**/*.js"
     ]
   },
   "fdkExcludeFiles": [
