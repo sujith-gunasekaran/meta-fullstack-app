@@ -41,22 +41,6 @@
     "jest-svg-transformer": "^1.0.0",
     "tailwindcss": "^3.4.1"
   },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "moduleNameMapper": {
-      "^.+\\.svg$": "jest-svg-transformer",
-      "^.+\\.(css|less|scss)$": "identity-obj-proxy",
-      "^app/(.*)$": "./app",
-      "^config/(.*)$": "./config"
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/setupTests.js"
-    ],
-    "collectCoverageFrom": [
-      "app/**/*.jsx",
-      "app/**/*.js"
-    ]
-  },
   "fdkExcludeFiles": [
     ".report.json"
   ]
