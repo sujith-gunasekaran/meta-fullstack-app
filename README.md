@@ -6,7 +6,8 @@
 - fdk custom installation page with react component
 - fdk server
 - fdk interface API
-- Added third party css library tailwind ( with light and dark mode support ), material UI and freshworks crayons
+- multiple placeholders in fdk
+- Added third-party css library tailwind ( with light and dark mode support ), material UI and Freshworks crayons
 - jest unit-test
 - react-router
-- redux statem management
+- redux state management
